@@ -10,7 +10,6 @@ async function getAllGroceryItems(req, res) {
 }
 
 async function createGroceryItem(req, res) {
-  groceryList[selected]._id
   try {
     let createdGroceryItem = new Grocery({
       grocery: req.body.grocery,
@@ -111,7 +110,7 @@ module.exports = {
   createGroceryItem,
   updateGrocery,
   updateGroceryPurchased,
-  updateGroceryPriority
+  updateGroceryPriority,
   deleteGrocery,
   sortGroceryByDate,
   sortGroceryByPurchased,
